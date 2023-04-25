@@ -1,4 +1,5 @@
 import sys; sys.path.append('../automation_project_1')
+from pages.client_information_page import ClientInformationPage
 from pages.cart_page import CartPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
@@ -18,4 +19,8 @@ def test_buy_product(driver):
 
     cp = CartPage(driver)
     cp.click_checkout_button()
+    time.sleep(1)
+
+    cip = ClientInformationPage(driver)
+    cip.input_information()
     time.sleep(1)
