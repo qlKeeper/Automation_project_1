@@ -7,10 +7,6 @@ class LoginPage(Base):
 
     url = "https://www.saucedemo.com/"
 
-    # def __init__(self, driver):
-    #     super().__init__(driver)
-    #     self.driver = driver
-
     # Locators
     user_name = 'user-name'
     password = 'password'
