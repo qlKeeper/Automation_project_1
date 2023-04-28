@@ -8,3 +8,10 @@ def driver():
     driver.maximize_window()
     yield driver
     driver.quit()
+
+
+@pytest.fixture()
+def set_up():
+    print("Start test (set_up)")
+    yield
+    print("Finish test (set_up)")
