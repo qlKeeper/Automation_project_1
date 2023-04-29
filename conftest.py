@@ -15,3 +15,10 @@ def set_up():
     print("Start test (set_up)")
     yield
     print("Finish test (set_up)")
+
+
+@pytest.fixture(scope="module")
+def set_group():
+    print("Enter system")
+    yield
+    print("Exit system")

@@ -8,7 +8,7 @@ from pages.finish_page import Finish_page
 import time, pytest
 
 # @pytest.mark.run(order=3)
-def test_buy_product_1(driver, set_up):
+def test_buy_product_1(driver):
     print("Start test 1")
     
     login = LoginPage(driver)
@@ -36,7 +36,7 @@ def test_buy_product_1(driver, set_up):
     time.sleep(1.5)
 
 # @pytest.mark.run(order=1)
-def test_buy_product_2(driver, set_up):
+def test_buy_product_2(driver):
     print("Start test 2")
     
     login = LoginPage(driver)
